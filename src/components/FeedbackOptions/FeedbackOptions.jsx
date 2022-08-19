@@ -6,10 +6,10 @@ import '../FeedbackOptions/FeedbackOptions.module.css';
 const FeedbackOptions = ({ options, onBtnClick }) => {
   return (
     <div className="feedbackBtn">
-      {options.map(key => {
+      {options.map(el => {
         return (
-          <button key={key} type="button" onClick={() => onBtnClick(key)}>
-            {key}
+          <button key={el} type="button" name={el} onClick={onBtnClick}>
+            {el}
           </button>
         );
       })}
