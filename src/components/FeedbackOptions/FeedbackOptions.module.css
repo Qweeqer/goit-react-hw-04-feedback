@@ -1,0 +1,42 @@
+div{
+    gap: 10px;
+    align-items: center;
+}
+.feedbackBtn{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: aqua;
+    list-style: none;
+}
+
+button {
+    
+    font-weight: 600;
+    margin-right: 20px;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    transition: transform 100ms linear,
+    box-shadow 100ms linear;
+}
+
+button:nth-child(1) {
+    background-color: green;
+}
+
+button:nth-child(2) {
+    background-color: yellow;
+}
+
+button:nth-child(3) {
+    background-color: red;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+            -23px 0 20px -23px rgba(0, 0, 0, .6),
+            23px 0 20px -23px rgba(0, 0, 0, .6),
+            inset 0 0 40px rgba(0, 0, 0, .1);
+}
